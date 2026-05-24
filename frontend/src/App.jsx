@@ -84,7 +84,7 @@ function App() {
 
         if (editingId) {
 
-            await fetch(`http://localhost:5000/students/${editingId}`, {
+            await fetch(`https://fsd2-pym7.onrender.com/students/${editingId}`, {
 
                 method: "PUT",
 
@@ -97,7 +97,7 @@ function App() {
 
         } else {
 
-            await fetch("http://localhost:5000/students", {
+            await fetch("https://fsd2-pym7.onrender.com/students", {
 
                 method: "POST",
 
@@ -130,7 +130,7 @@ function App() {
 
     const deleteStudent = async (id) => {
 
-        await fetch(`http://localhost:5000/students/${id}`, {
+        await fetch(`https://fsd2-pym7.onrender.com/students/${id}`, {
 
             method: "DELETE"
         });
