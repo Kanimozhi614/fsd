@@ -24,7 +24,7 @@ function App() {
 
     const fetchStudents = async () => {
 
-        const res = await fetch("http://localhost:5000/students");
+        const res = await fetch("https://fsd2-pym7.onrender.com/students");
 
         const data = await res.json();
 
